@@ -1,0 +1,6 @@
+.lesson-page{
+    margin-top: 4.7rem;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+}

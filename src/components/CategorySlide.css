@@ -1,0 +1,126 @@
+.course-categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  .course-categories-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #1ac10089;
+  }
+  .course-categories-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    padding: 1rem;
+  }
+  
+  .course-categories-slider-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  
+  .course-categories-card {
+    position: relative;
+    height: 300px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    margin: 0 10px;
+    transition: .1s ease-in-out;
+  } 
+  .course-categories-card:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.628);
+  }
+  
+  .course-categories-card img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .course-categories-card h2 {
+    margin-top: 1rem;
+  }
+  
+  .course-categories-slider-prev,
+  .course-categories-slider-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .course-categories-slider-prev {
+    left: 0;
+  }
+  
+  .course-categories-slider-next {
+    right: 0;
+  }
+  
+  /* Show only one card at a time */
+  .course-categories-slider-inner {
+    transform: translateX(0);
+    width: calc(100% * var(--card-count));
+  }
+  
+  /* Shift the card based on the current slide index */
+  .course-categories-slider-inner[data-current-slide="0"] {
+    transform: translateX(0);
+  }
+  
+  .course-categories-slider-inner[data-current-slide="1"] {
+    transform: translateX(calc(-100% / var(--card-count)));
+  }
+  
+  .course-categories-slider-inner[data-current-slide="2"] {
+    transform: translateX(calc(-200% / var(--card-count)));
+  }
+  
+  /* Update the --card-count custom property based on the number of cards */
+  /* @media (min-width: 768px) {
+    .course-categories-slider-inner {
+      --card-count: 3;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .course-categories-slider-inner {
+      --card-count: 2;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .course-categories-slider-inner {
+      --card-count: 1;
+    }
+  }
+   */

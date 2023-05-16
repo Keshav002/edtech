@@ -1,0 +1,95 @@
+.course-page {
+  display: flex;
+  margin-top: 4rem;
+  flex-direction: column;
+  position: relative;
+  color: white;
+}
+
+.bg-image {
+  height: 1200px;
+  width: 100%;
+  background-image: url('https://img.freepik.com/free-vector/abstract-blue-technology-background_23-2149352060.jpg?t=st=1683808913~exp=1683809513~hmac=fe29243b20376c986e5a73a3e03404f147a01e02b0d3226825723191e420dd17');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.course-detail {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  align-items: center;
+  padding: 50px;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+}
+
+.course-name {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.course-desc {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.go-to-course {
+  background-color: #6b04f198;
+  color: white;
+  margin-top: 5rem;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+  z-index: -1;
+  text-decoration: none;
+}
+.go-to-course:hover {
+  color: #6b04f198;
+  background-color: white;
+ 
+}
+
+.course-infor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 7rem;
+  position: relative;
+  z-index: 1;
+}
+
+.course-info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 2px 7px 7px rgba(255, 255, 255, 0.569);
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+.course-info-item:hover {
+  box-shadow: 2px 7px 7px rgba(255, 255, 255, 0.152);
+  cursor: pointer;
+}
+
+.course-info-item p:first-child {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.course-info-item p:last-child {
+  font-size: 1.2rem;
+}

@@ -1,0 +1,65 @@
+.catalog-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    background-color: #00b80fc2;
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    margin-left: 1.5rem;
+    max-width: 1250px;
+    padding: 30px;
+  }
+  
+  .catalog-content {
+    flex: 2;
+    padding-right: 50px;
+  }
+  
+  .catalog-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 35px;
+    color: white;
+    margin-bottom: 15px;
+  }
+  
+  .catalog-description {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 25px;
+    line-height: 29px
+  }
+  
+  .price {
+    font-weight: bold;
+  }
+  
+  .catalog-button {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: white;
+    background-color: #00b80fc2;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 25px;
+    margin-left: 5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .catalog-button:hover {
+    background-color: white;
+    color: #00b80fc2;
+  }
+  
+  .catalog-icon {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    color: white;
+  }
+  

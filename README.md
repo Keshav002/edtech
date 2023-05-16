@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# EdTech Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is an EdTech (Educational Technology) application built using Django and React.js. The application aims to provide an interactive learning platform for students and teachers, facilitating the management of courses, assignments, and communication between users.
 
-## Available Scripts
 
-In the project directory, you can run:
+### Installation
 
-### `npm start`
+To get started with this app, you need to have Node.js and Python 3 installed on your system.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Follow these steps to install the app:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ Clone this repository:
 
-### `npm test`
+Run git clone edtech in your terminal. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Install the required packages:
 
-### `npm run build`
+Navigate to the mycourse directory using cd mycourse and run npm install to install the required packages for the React frontend.\
+In the mycourse  and run pip install -r requirements.txt to install the required packages for the Django backend.
+Go to course directory  and start the development server:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+In the main directory, run npm start to start the development server for the React app on http://localhost:3000.
+In the backend directory, run python manage.py runserver to start the Django development server on http://localhost:8000.
+Open the app in your browser:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Go to http://localhost:3000 in your web browser to access the React frontend.
+To access the Django API endpoints, go to http://localhost:8000/ in your web browser. You can also use tools like Postman to test the API endpoints.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Contributing
 
-### `npm run eject`
+We welcome contributions from anyone. If you'd like to contribute, please follow these steps:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Fork this repository.
+Create a new branch.
+Make your changes.
+Submit a pull request.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Credits
+This project is created by [Keshav002](https://github.com/Keshav002). Special thanks to the following resources:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Django documentation](https://docs.djangoproject.com/en/3.2/)\
+[React documentation](https://legacy.reactjs.org/docs/getting-started.html)
